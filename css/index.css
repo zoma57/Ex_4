@@ -57,6 +57,17 @@ body {
     display: none;
     opacity: 0;
     transition-duration: 1s;
+    background-color: rgba(0, 0, 0, .5);
+}
+.error-shake {
+    animation: shake;
+    animation-duration: .4s;
+    animation-timing-function: ease-in-out;
+}
+.same-image-bounce {
+    animation: bounce;
+    animation-duration: .4s;
+    animation-timing-function: ease-in-out;
 }
 .popup.active {
     display: flex;
@@ -77,6 +88,11 @@ body {
 }
 .popup .box i {
     cursor: pointer;
+}
+.popup .box i:hover,
+.popup .box ul li:hover {
+    background: var(--bs-yellow);
+    color: white;
 }
 .popup .box i.close {
     top: 20px;
@@ -115,7 +131,11 @@ body {
     font-size: 14px;
     cursor: pointer;
     font-weight: 700;
+    transition-duration: .5s;
 }
 .popup .box ul li.active {
     background: white;
+}
+.popup .box ul li.active:hover {
+    color: var(--bs-yellow);
 }
