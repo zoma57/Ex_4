@@ -25,15 +25,15 @@ function updateIndicators () {
 }
 
 function invalidKeyEffect() {
-    popUpImgEle.classList.add("error-shake");
+    popupBoxEle.classList.add("error-shake");
     setTimeout(function () {
-        popUpImgEle.classList.remove("error-shake");
+        popupBoxEle.classList.remove("error-shake");
     }, 400); 
 }
 
 function sameImageEffect() {
-    popUpImgEle.classList.add("same-image-bounce");
+    popupBoxEle.classList.add("same-image-bounce");
     setTimeout(function () {
-        popUpImgEle.classList.remove("same-image-bounce");
+        popupBoxEle.classList.remove("same-image-bounce");
     }, 400);
 }
