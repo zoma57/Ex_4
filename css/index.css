@@ -59,12 +59,12 @@ body {
     transition-duration: 1s;
     background-color: rgba(0, 0, 0, .5);
 }
-.error-shake {
+.box.error-shake {
     animation: shake;
     animation-duration: .4s;
     animation-timing-function: ease-in-out;
 }
-.same-image-bounce {
+.box.same-image-bounce {
     animation: bounce;
     animation-duration: .4s;
     animation-timing-function: ease-in-out;
